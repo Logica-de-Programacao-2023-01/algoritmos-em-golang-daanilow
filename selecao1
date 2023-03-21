@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numero1 int64
+	var numero2 int64
+
+	fmt.Print("Digite o primeiro número")
+	fmt.Scan(&numero1)
+	fmt.Println("Digite o segundo número")
+	fmt.Scan(&numero2)
+
+	if numero1 > numero2 {
+		fmt.Println("O maior número é o número", numero1)
+	} else if numero2 > numero1 {
+		fmt.Println("O maior número é o número", numero2)
+	} else if numero2 == numero1 {
+		fmt.Println("Os dois números são iguais")
+	}
+}
+
