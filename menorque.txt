@@ -1,0 +1,22 @@
+import "fmt"
+
+func main() {
+	var n1 int64
+	var n2 int64
+	var n3 int64
+
+	fmt.Print("Digite o primeiro número")
+	fmt.Scan(&n1)
+	fmt.Println("Digite o segundo número")
+	fmt.Scan(&n2)
+	fmt.Println("Digite o terceiro número")
+	fmt.Scan(&n3)
+
+	menor := n1
+	if n2 < menor {
+		menor = n2
+	}
+	if n3 < menor {
+		menor = n3
+	}
+	fmt.Println("O menor número é", menor)
